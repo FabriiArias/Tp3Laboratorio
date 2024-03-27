@@ -1,19 +1,22 @@
 
 package tp3laboratorio;
 
+import javax.annotation.processing.RoundEnvironment;
 import javax.swing.JOptionPane;
+import javax.swing.border.Border;
 
 /**
  *
- * @author ALFIO
+ * @author Fabri
  */
 public class Ventana extends javax.swing.JFrame {
 
     
     public Ventana() {
         initComponents();
+        setTitle("Login alumnos");
     }
-
+    
     
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
@@ -29,8 +32,8 @@ public class Ventana extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
 
-        jPanel1.setBackground(new java.awt.Color(194, 208, 189));
-        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Registro Alumno", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Dialog", 1, 12), new java.awt.Color(51, 51, 51))); // NOI18N
+        jPanel1.setBackground(new java.awt.Color(148, 238, 252));
+        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(41, 43, 45)), "Registro Alumno", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Dialog", 0, 12), new java.awt.Color(51, 51, 51))); // NOI18N
         jPanel1.setForeground(new java.awt.Color(187, 173, 179));
 
         txtUsuario.addActionListener(new java.awt.event.ActionListener() {
@@ -46,7 +49,11 @@ public class Ventana extends javax.swing.JFrame {
         jLabel2.setForeground(new java.awt.Color(0, 0, 0));
         jLabel2.setText("Usuario");
 
+        btnRegistrar.setBackground(new java.awt.Color(148, 238, 252));
         btnRegistrar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tp3laboratorio/LOGIN.png"))); // NOI18N
+        btnRegistrar.setBorder(null);
+        btnRegistrar.setBorderPainted(false);
+        btnRegistrar.setOpaque(true);
         btnRegistrar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnRegistrarActionPerformed(evt);
@@ -122,7 +129,7 @@ public class Ventana extends javax.swing.JFrame {
         }else{
             JOptionPane.showMessageDialog(null, "Usuario y/o Contraseña incorrectos");
         }
-            
+        
     }//GEN-LAST:event_btnRegistrarActionPerformed
 
     private void txtPassActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtPassActionPerformed
@@ -167,6 +174,7 @@ public class Ventana extends javax.swing.JFrame {
                 new Ventana().setVisible(true);
             }
         });
+         
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
