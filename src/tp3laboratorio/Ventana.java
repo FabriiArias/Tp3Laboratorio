@@ -115,6 +115,7 @@ public class Ventana extends javax.swing.JFrame {
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void txtUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtUsuarioActionPerformed
@@ -128,6 +129,7 @@ public class Ventana extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(null, "Ingresaste correctamente");
         }else{
             JOptionPane.showMessageDialog(null, "Usuario y/o Contraseña incorrectos");
+           
         }
         
     }//GEN-LAST:event_btnRegistrarActionPerformed
